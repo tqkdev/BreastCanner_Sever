@@ -1,5 +1,5 @@
 fastapi
-PIL
+pillow
 numpy
 io
 keras
