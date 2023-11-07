@@ -1,7 +1,6 @@
 fastapi
 pillow
 numpy
-io
 keras
 torch
 torchvision
