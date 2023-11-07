@@ -1,0 +1,9 @@
+fastapi
+PIL
+numpy
+io
+keras
+torch
+torchvision
+base64
+BytesIO
