@@ -4,5 +4,4 @@ numpy
 keras
 torch
 torchvision
-base64
 BytesIO
