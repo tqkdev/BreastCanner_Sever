@@ -15,7 +15,7 @@ app = FastAPI()
 # Cấu hình CORS
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://khaidev.daihocso.ntt.edu.vn/"],  # Chỉ định trang web gốc của bạn
+    allow_origins=["http://localhost:5173"],  # Chỉ định trang web gốc của bạn
     allow_credentials=True,
     allow_methods=["*"],  # Cho phép tất cả các phương thức HTTP
     allow_headers=["*"],  # Cho phép tất cả các tiêu đề HTTP
@@ -109,7 +109,6 @@ async def predict(file: UploadFile):
 
     return {"name_predict": predicted_class_name, "overlay_base64": overlay_base64, "img_base64": img_base64}
 
-if __name__ == "__main__":
-    import uvicorn
-
-    uvicorn.run(app, host="127.0.0.1", port=8000)
+# if __name__ == "__main__":
+#     import uvicorn
+#     uvicorn.run(app, host="127.0.0.1", port=8000)
